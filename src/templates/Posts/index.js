@@ -7,7 +7,7 @@ class Posts extends Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:8000/wp-json/wp/v2/posts")
+    fetch("https://wp-reb-2.herokuapp.com/wp-json/wp/v2/posts")
       .then(results => results.json())
       .then(posts => {
         const mappedPosts = posts.map(post => {
